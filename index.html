@@ -36,6 +36,7 @@
 		<imagetarget id='board2' src='targets/board2.jpeg'></imagetarget>
 		<imagetarget id='curbs_slave' src='targets/curbs_slave.jpeg'></imagetarget>
 		<imagetarget id='anatomy_cardiac' src='targets/anatomy_cardiac.jpeg'></imagetarget>
+		<imagetarget id='anatomy_cardiac2' src='targets/anatomy_cardiac2.jpeg'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
@@ -351,7 +352,7 @@
       function ShowError(error){
           var errorDiv = document.getElementById("errorDiv");
           errorDiv.style.opacity = 1;
-          errorDiv.style.display = "none";
+          errorDiv.style.visibility = "visible";
           document.getElementById("errorText").innerHTML = error;
       }
       function ShowScreenshot(dataUrl){
